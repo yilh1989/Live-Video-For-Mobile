@@ -1,0 +1,56 @@
+$directionColor: (black:#000000, red: #ff3d3d, green:#0fc351, blue:#3690ff);
+
+.one-strategy {
+  background-color: #ffffff;
+  margin-bottom: 0.1rem;
+  font-size: 0.12rem;
+  color: #23272f;
+}
+
+@each $name, $color in $directionColor{
+  .direction-#{$name} {
+    color: $color;
+  }
+}
+
+.header {
+  padding: 0 0.2rem;
+  line-height: 0.29rem;
+  border-bottom: 0.01rem solid #e5e5ec;
+}
+
+.goods {
+  padding-right: 0.1rem;
+}
+.analyst{
+  font-size: 0.1rem;
+  color: #91929a;
+}
+.main {
+  padding: 0.1rem 0.2rem;
+  span{
+    padding-right: 0.02rem;
+  }
+}
+
+.item-left{
+  display: inline-block;
+  width: 30%;
+}
+.item-right{
+  display: inline-block;
+  width: 60%;
+  div{
+    display: inline-block;
+    padding-right: 15%;
+  }
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.font-red{
+  color: #ff3d3d;
+}
+

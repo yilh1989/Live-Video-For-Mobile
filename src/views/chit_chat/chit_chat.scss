@@ -1,0 +1,99 @@
+@import 'valChat';
+
+$faceBtnWidth: 0.3rem;
+$sendBtnWidth: 0.6rem;
+$btnPadding: 0.1rem;
+
+.wrap{
+  font-size: $fontSize;
+}
+.chat-box {
+  position: relative;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.record {
+  height: 100%;
+}
+
+.qq-counsellor {
+  overflow: hidden;
+  font-size: 0.9*$fontSize;
+  ul {
+    height: 100%;
+    padding: 0 $boxPadding;
+    background: $chatBgColor;
+  }
+}
+
+.msg-wrap {
+  padding: 0 0.15rem 0.1rem;
+  background: $chatBgColor;
+}
+
+.msg-box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-left: $faceBtnWidth+$btnPadding;
+  padding-right: $sendBtnWidth+$btnPadding;
+}
+
+.msg-input-box {
+  border: solid 1px $chatBgColor;
+  height: 100%;
+  background: $sendInputBgColor;
+  border-radius: 0.05rem;
+  overflow: hidden;
+}
+
+.show-face-box {
+  position: absolute;
+  left: 0;
+  width: $faceBtnWidth;
+  height: 100%;
+  text-align: left;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.show-face-btn {
+  height: 100%;
+  img {
+    width: $faceBtnWidth;
+    height: $faceBtnWidth;
+  }
+}
+
+.send-msg-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: $sendBtnWidth;
+  height: 100%;
+  overflow: hidden;
+  button {
+    width: 100%;
+    height: 100%;
+    background: $sendMsgBtnBgColor;
+    color: whitesmoke;
+    border-radius: 0.05rem;
+    &[disabled] {
+      background: $cannotSendMsgBtnBgColor;
+    }
+  }
+}
+
+/* 兼容ipad */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+  .qq-counsellor {
+    font-size: 1.1*$fontSize;
+  }
+  .msg-box {
+    padding-right: 1.5*$sendBtnWidth + $btnPadding;
+  }
+  .send-msg-box {
+    width: 1.5*$sendBtnWidth;
+  }
+}

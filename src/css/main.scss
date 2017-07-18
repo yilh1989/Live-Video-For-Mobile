@@ -1,0 +1,23 @@
+@import "normalize";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 625%;
+}
+
+body {
+  width: 100%;
+  background-color: #0f1318;
+  font-size: 10%;
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+  overflow: hidden;
+  overflow-scrolling : touch;
+  -webkit-overflow-scrolling : touch;
+}

@@ -1,0 +1,51 @@
+/**
+ * Created by Amg on 2016/11/11.
+ */
+
+.one-calendar {
+  margin-top: 0.1rem;
+  padding: 0.05rem;
+  background-color: #ffffff;
+  min-height: 0.96rem;
+}
+
+.createTime {
+  text-align: right;
+  color: #67707b;
+}
+
+.main {
+  position: relative;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: -0.05rem;
+  width: 0.55rem;
+  text-align: center;
+}
+
+.country {
+  img {
+    max-width: 0.55rem;
+  }
+}
+
+.star {
+  img:nth-child(2) {
+    margin: 0 0.05rem;
+  }
+}
+
+.right {
+  line-height: 0.19rem;
+  margin-left: 0.65rem;
+}
+
+.item {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 50%;
+}
+

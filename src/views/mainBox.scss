@@ -1,0 +1,47 @@
+/**
+ * Created by Amg on 2016/11/17.
+ */
+//
+@import "./val_main";
+
+.main-box {
+
+}
+
+.header-box {
+  position: relative;
+  width: 100%;
+  background-color: $headerBgColor;
+  user-select: none;
+  z-index: 10;
+}
+.content-box{
+  position: absolute;
+  width: 100%;
+  background-color: $contentBgColor;
+}
+
+.no-rooms {
+  width: 100%;
+  height: 100%;
+  padding-top: 65%;
+  text-align: center;
+  b {
+    position: relative;
+    display: inline-block;
+    color: #CF683A;
+    font-size: $noMoreFontSize;
+    &:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      bottom: 1.5 * $noMoreFontSize;
+      left: -0.88rem + 0.5 * 5 * $noMoreFontSize;
+      width: 1.76rem;
+      height: 1.25rem;
+      background: url('../images/image_nolive@2x.png') no-repeat center top;
+      background-size: 100%;
+      text-align: center;
+    }
+  }
+}

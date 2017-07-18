@@ -1,0 +1,56 @@
+@import "./val_main";
+
+$inlinePadding: 0.1rem;
+
+.header {
+  height: 100%;
+  font-size: $headerFontSize;
+}
+
+// 行间公共样式
+.inline {
+  display: inline-block;
+  height: 100%;
+  padding: 1.5*$inlinePadding $inlinePadding 0;
+  color: $headerFontColor;
+  font-weight: bold;
+}
+
+.room-name {
+  @extend .inline;
+  float: left;
+  color: $roomNameColor;
+  font-size: $headerRoomNameFontSize;
+}
+
+.info {
+  float: right;
+  height: 100%;
+}
+
+.name {
+  @extend .inline;
+}
+
+.reg {
+  @extend .inline;
+  color: #3690ff;
+}
+
+.login {
+  @extend .inline;
+}
+
+.logout {
+  @extend .inline;
+}
+
+/* 兼容ipad */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+  .header {
+    font-size: 1.25*$headerFontSize;
+  }
+  .room-name {
+    font-size: 1.25*$headerRoomNameFontSize;
+  }
+}

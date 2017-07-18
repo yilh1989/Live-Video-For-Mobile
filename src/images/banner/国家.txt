@@ -1,0 +1,21 @@
+1.中国gbtb03：       China
+2.澳大利亚gbtb13：   Australian
+3.巴西gbtb08：       Brazil
+4.德国gbtb05：       Germany
+5.俄罗斯gbtb10：     Russia
+6.法国gbtb06：       France
+7.韩国gbtb15：       Korea
+8.荷兰gbtb19：       Holland
+9.加拿大gbtb12：     Canada
+10.美国gbtb02：      America
+11.墨西哥gbtb16：    Mexico
+12.日本gbtb04：      Japan
+13.瑞士gbtb21：      Swit
+14.沙特阿拉伯gbtb20：Arabia
+15.土耳其gbtb18：    turkey
+16.西班牙gbtb14：    Spain
+17.意大利gbtb11：    Italy
+18.印度gbtb09：      India
+19.印度尼西亚gbtb17：Indonesia
+20.英国gbtb07：      England
+21.阿根廷gbtb22：    Argentina

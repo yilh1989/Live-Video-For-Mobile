@@ -1,0 +1,43 @@
+$padding: 0.05rem;
+$fontSize: 0.12rem;
+$lineHeight: 0.22rem;
+
+.wrap {
+  font-size: $fontSize;
+  //line-height: $lineHeight;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.input {
+  display: block;
+  position: absolute;
+  top: $padding;
+  bottom: $padding;
+  left: $padding;
+  right: $padding;
+  overflow-x: hidden;
+  overflow-y: auto;
+  img{
+    width: $lineHeight;
+    height: $lineHeight;
+    vertical-align: middle;
+  }
+  div{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.holder {
+  position: absolute;
+  display: block;
+  top: $padding;
+  bottom: $padding;
+  left: $padding;
+  right: $padding;
+  cursor: text;
+  color: darkgray;
+}

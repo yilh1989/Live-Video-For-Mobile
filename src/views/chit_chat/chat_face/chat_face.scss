@@ -1,0 +1,42 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.face-box {
+  position: absolute;
+  user-select: none;
+  //left: 0;
+  //right: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  padding: 5px;
+  border: 1px #dfe6f6 solid;
+  list-style: none;
+  text-align: left;
+  overflow: auto;
+
+}
+
+.icon {
+  user-select: none;
+
+  display: inline-block;
+  padding: 8px 5px 0;
+  cursor: pointer;
+  list-style: none;
+  img{
+    width: 0.3rem;
+    height: 0.3rem;
+  }
+}
+
+.current {
+  img {
+    box-shadow: 0 0 8px 3px #0CC;
+  }
+}

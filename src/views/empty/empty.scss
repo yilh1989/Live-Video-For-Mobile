@@ -1,0 +1,19 @@
+/**
+ * Created by Amg on 2016/11/15.
+ */
+
+
+.empty {
+  position: relative;
+  height: 100%;
+  background-color: whitesmoke;
+  div {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.2rem;
+    width: 100%;
+    text-align: center;
+    height: 0.2rem;
+    line-height: 0.2rem;
+  }
+}

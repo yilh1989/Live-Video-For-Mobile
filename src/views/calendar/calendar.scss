@@ -1,0 +1,53 @@
+.calendar {
+  position: relative;
+  height: 100%;
+  padding-top: 0.45rem;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.45rem;
+  background-color: whitesmoke;
+  border-bottom: 0.01rem solid #e5e5ec;
+}
+
+.week {
+  position: relative;
+  width: 14%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+
+  &:first-child,
+  &:last-child {
+    width: 15%;
+  }
+}
+
+.week-active:after {
+  content: '';
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0.05rem 0.05rem;
+  border-color: #b3b6c1 transparent;
+}
+
+.day {
+  line-height: 0.15rem;
+  padding-top: 0.05rem;
+}
+
+.content {
+  height: 100%;
+  background-color: #e5e5ec;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

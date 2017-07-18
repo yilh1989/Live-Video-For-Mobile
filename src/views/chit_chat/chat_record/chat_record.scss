@@ -1,0 +1,46 @@
+@import '../valChat';
+
+
+.record-box{
+  height:100%;
+}
+.chat-content{
+  height:100%;
+  overflow: auto;
+}
+.top-flags {
+  text-align: center;
+  font-size: 0.12rem;
+  color: $recordHeaderColor;
+  padding-top: 0.05rem;
+}
+.more {
+  @extend .top-flags;
+  color: $sendMsgBtnBgColor;
+  b{
+    display: inline-block;
+    position: relative;
+    margin:0.02rem 0.05rem;
+    width: 0.14rem;
+    height: 0.14rem;
+    vertical-align: bottom;
+    background: $sendMsgBtnBgColor;
+    border-radius: 0.07rem;
+  }
+  b:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0.03rem;
+    left: 0.06rem;
+    width: 0.03rem;
+    height: 0.04rem;
+    transform: skewY(45deg);
+    border: 0.01rem solid;
+    border-color: transparent transparent #fff #fff;
+  }
+}
+
+.no-more {
+  @extend .top-flags;
+}

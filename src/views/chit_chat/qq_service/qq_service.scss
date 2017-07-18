@@ -1,0 +1,29 @@
+/**
+ * Created by Amg on 2016/11/7.
+ */
+
+.qq-service {
+  display: inline-block;
+  width: 25%;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: inherit;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    width: 25px;
+    height: 20px;
+    background: url('../../../images/icon-qq.png') no-repeat center;
+  }
+}
+
+/* 兼容ipad */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+  .qq-service {
+    width: 15%;
+  }
+}

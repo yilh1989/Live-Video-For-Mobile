@@ -1,0 +1,31 @@
+$fontSize: 0.11rem;
+.button-box {
+  position: fixed;
+  top: 50%;
+  z-index: 9999;
+}
+
+.button {
+  text-align: center;
+  width: 2.5*$fontSize;
+  padding: 0.75*$fontSize 0;
+  font-size: $fontSize;
+  letter-spacing: 0.2*$fontSize;
+  line-height: 2.5*$fontSize;
+  writing-mode: vertical-lr;
+  color: #53555a;
+  border: solid 0.01rem #e5e5ec;
+  border-radius: 0.5*$fontSize;
+  background-color: #e5e5ec;
+  overflow: hidden;
+}
+
+@media (min-device-height: 927px) and (-webkit-min-device-pixel-ratio: 1) { /* 兼容ipad */
+  .button {
+    width: 3.2*$fontSize;
+    font-size: 1.2*$fontSize;
+    letter-spacing: 0.3*$fontSize;
+    line-height: 3.2*$fontSize;
+    cursor: pointer;
+  }
+}

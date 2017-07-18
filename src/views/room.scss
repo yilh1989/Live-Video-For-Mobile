@@ -1,0 +1,55 @@
+@import "./val_main";
+
+.room {
+  font-size: $fontSize;
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #1a1c1e;
+  color: #ffffff;
+}
+
+.nav {
+  width: 100%;
+  background: $navBgColor;
+  color: $navColor;
+  overflow: hidden;
+  user-select: none;
+}
+
+.nav-item {
+  display: inline-block;
+  height: 100%;
+  line-height: 0.38rem; // TODO: 高度由js设置
+  font-size: $navFontSize;
+  text-align: center;
+  overflow: hidden;
+}
+
+@each $key, $width in (chat:24%, news:28%, calendar:24%, realTime:24%) {
+  .nav-item-#{$key} {
+    width: $width;
+  }
+}
+
+.active {
+  color: $navActiveColor;
+  background-color: $navActiveBgColor;
+  border-bottom: 2px solid $navActiveColor;
+}
+
+.content {
+  background: $roomContentBgColor
+}
+
+/* 兼容ipad */
+@media only screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait){
+  .nav-item {
+    font-size: 1.25*$navFontSize;
+  }
+}

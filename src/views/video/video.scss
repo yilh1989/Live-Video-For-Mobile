@@ -1,0 +1,55 @@
+/**
+ * Created by Amg on 2016/11/30.
+ */
+
+/*
+无直播
+*/
+$noVideoColor: gray;
+$noVideoFontSize: 11px;
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.video-prompt {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #2c3239;
+}
+
+.txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10.5*$noVideoFontSize;
+  margin-left: -5.5*$noVideoFontSize;
+  height: 1.5*$noVideoFontSize;
+  line-height: 1.5*$noVideoFontSize;
+  font-size: $noVideoFontSize;
+  color: $noVideoColor;
+  display: inline-block;
+
+  b {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: -20+5.2*$noVideoFontSize;
+    background: no-repeat center;
+    background-size: 100%;
+  }
+  .icon-fetch {
+    width: 30px;
+    height: 30px;
+    left: -15+5.2*$noVideoFontSize;
+    background-image: url("../../images/fetching.gif");
+  }
+  .icon-no {
+    background-image: url("../../images/no_video.png");
+  }
+}
